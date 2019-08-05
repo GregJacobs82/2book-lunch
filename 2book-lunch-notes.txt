@@ -1,0 +1,99 @@
+2Book Group Order
+	- just track lunches
+
+//*** OR ***//
+
+2Book Group Events
+	- with events, could track budget & expenses for: lunches, happy hours, other events (axe throw, putt-putt, etc)
+
+
+
+
+
+//*** GOAL:
+To be able to track orders (weekly, or per date specified)
+Provide a history of order by: restaurant, date, per person, etc?
+Track amount spent?
+Provide a "date cutoff" for the order, so user must order by certain time/date
+Sync to database via Firebase? Or AWS?
+Use Vuetify? Or Material Design theme?
+Auto-deploy with Netlify?
+
+
+
+
+
+//*** ADMIN FEATURES:
+1. add restaurants to choose from and provide links to menu, and any other extra links might be wanted to add for sites like Yelp
+2. Add / Control user list: Username, Email, Password Login
+
+
+//*** ADMIN FLOW:
+1. Log in
+2. Choose date to place the order, date cutoff?
+3. Choose restaurant 
+4. Send out invites via email? (maybe future feature)
+
+
+
+
+
+
+//*** USER FLOW:
+1. Log in, see dashboard? or Calendar of order history? list of dates?
+2. Be able to select future order dates (that have been created by admin)
+3. Type in and save their order request per order date.
+
+
+
+
+
+
+//*** DATABASE:
+
+USERS
+RESTAURANTS
+ORDERS
+	- description
+	- user.id
+	- event.id
+EVENTS
+	- budget
+	- date
+	- restaurant
+
+
+//*** QUERY TYPES / RELATIONSHIPS:
+1:1
+1:MANY
+MANY:MANY
+
+
+POST - Creates ID by auto-increment
+PUT - overwrites entire UUID
+PATCH - writes only 1 specific part of the UUID
+DELETE
+
+
+
+
+
+
+//******************* 20190801
+API Structure for Restaurant
+
+
+RESTAURANTS
+	- id
+	- name
+	- yelp link
+	- yelp
+
+
+Scaffolded app as “2book-lunch” using $ npx create-next-app
+/2book-lunch
+
+Modified server/index.js file to add our own 2book api at /api/restaurants
+
+Initialized GitHub repo “2book-lunch”
+

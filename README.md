@@ -4,6 +4,8 @@
 
 ## Build Setup
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12d99bae-30dd-48ec-89c7-4d9ce02f3897/deploy-status)](https://app.netlify.com/sites/2book-lunch/deploys)
+
 ``` bash
 # install dependencies
 $ npm run install

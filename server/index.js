@@ -2,6 +2,7 @@ const express = require('express')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
+const routes = require('./routes.js')
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
@@ -22,15 +23,7 @@ async function start () {
   }
 
   // 2BOOK API
-  app.get('/api/restaurants', (req, res) => {
-    return res.json([
-      {
-        id: '1',
-        name: 'restaruant 1',
-        url: 'https://www.somethinghere.com'
-      }
-    ])
-  })
+  routes(app)
 
   // Give nuxt middleware to express
   app.use(nuxt.render)

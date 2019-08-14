@@ -79,6 +79,10 @@ DELETE
 
 
 
+
+
+
+
 //******************* 20190801
 API Structure for Restaurant
 
@@ -90,10 +94,91 @@ RESTAURANTS
 	- yelp
 
 
-Scaffolded app as “2book-lunch” using $ npx create-next-app
+Scaffolded app as “2book-lunch” using $ npx create-nuxt-app
 /2book-lunch
 
 Modified server/index.js file to add our own 2book api at /api/restaurants
 
 Initialized GitHub repo “2book-lunch”
+
+
+
+
+
+
+
+
+
+
+
+//******************* 20190814
+Tags? restaurants to be found by type of food.
+
+TAGS Query Type = Many to Many
+
+
+//************/
+//* DATABASE */
+//************/
+
+RESTAURANTS {
+	- id
+	- name
+	- url
+}
+
+RESTAURANT_TAGS {
+	- id
+	- rest.id
+	- tag.id
+}
+
+TAGS {
+	- id
+	- name (unique)
+}
+
+USERS {
+	- id
+	- name_first
+	- name_last
+	- email
+	- password?
+}
+
+ORDERS {
+	- description
+	- user.id
+	- event.id
+}
+
+EVENTS {
+	- budget
+	- date
+	- restaurant
+}
+
+
+
+
+//********/
+//* CRUD */
+//********/
+
+GET 	/restaurants    (list the restaurants)
+GET 	/restaurants/:id
+
+
+GET 	/restaurants/:id/tags [{id,name}, {id, name}]
+POST 	/restaurants/:id/tags/:id
+DELETE 
+
+
+
+
+//*** HOMEWORK
+BUILD an endpoint
+
+
+
 

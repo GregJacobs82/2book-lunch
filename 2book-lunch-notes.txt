@@ -178,7 +178,8 @@ DELETE
 
 //*** HOMEWORK
 BUILD an endpoint
-
+	- import faker data for list of (20) restaurants
+	- display UI list of restaurants
 
 
 

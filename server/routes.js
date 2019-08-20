@@ -1,19 +1,22 @@
-function Routes (app) { 
-    
+/* eslint-disable */
+const factory = require('./db/factories/factory.js')
+// import { factory } from './db/factories/factory.js'
+
+function Routes(app) {
+    // this.$axios.get("https://jsonplaceholder.typicode.com/users")
+    //     .then(res => res.data)
+    //     .then(users => this.users = users);
+
     app.get('/api/restaurants', (req, res) => {
-        return res.json([
-            {
-                id: '1',
-                name: 'restaruant 1',
-                url: 'https://www.somethinghere.com'
-            }
-        ])
-    });
+        const restaurants = factory.times(20).make('Restaurant')
+        // console.log(restaurants); // testing
+        return res.json(restaurants)
+    })
 
     app.get('/api/restaurants/:id', (req, res) => {
-        let id = req.params.id
+        const id = req.params.id
         return res.json({ id })
-    });    
+    })
 }
 
-module.exports = Routes;
+module.exports = Routes

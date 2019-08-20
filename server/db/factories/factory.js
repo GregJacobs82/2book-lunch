@@ -1,4 +1,6 @@
-let factory = require('node-model-factory');
+let Factory = require('./../../../node_modules/node-model-factory/dist/factory.js');
+
+let factory = new Factory.default();
 
 factory.define('Restaurant', function (faker, factory) {
     return {

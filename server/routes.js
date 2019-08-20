@@ -1,5 +1,5 @@
 /* eslint-disable */
-const factory = require('./db/factories/factory.js')
+const factory = require('./db/factories/factory.js');
 // import { factory } from './db/factories/factory.js'
 
 function Routes(app) {
@@ -9,7 +9,7 @@ function Routes(app) {
 
     app.get('/api/restaurants', (req, res) => {
         const restaurants = factory.times(20).make('Restaurant')
-        // console.log(restaurants); // testing
+        // console.log(restaurants);
         return res.json(restaurants)
     })
 

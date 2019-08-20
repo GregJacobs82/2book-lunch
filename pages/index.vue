@@ -2,11 +2,7 @@
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img
-                    style="width:24px;"
-                    src="https://cdn.massagebook.com/218/static/img/icon-green.svg"
-                />
-                2Book Lunch
+                <Logo2BookLunch />2Book Lunch
             </a>
             <button
                 class="navbar-toggler"
@@ -45,7 +41,7 @@
         </nav>
         <div class="container">
             <div>
-                <logo />
+                <Logo2BookLunch />
                 <h1 class="title">2book-lunch</h1>
                 <h2 class="subtitle">My good Nuxt.js project</h2>
                 <div class="links">
@@ -53,9 +49,9 @@
                         href="https://nuxtjs.org/"
                         target="_blank"
                         class="button--green"
-                    >Documentation</a>
+                    >Nuxt Documentation</a>
                     <a
-                        href="https://github.com/nuxt/nuxt.js"
+                        href="https://github.com/GregJacobs82/2book-lunch"
                         target="_blank"
                         class="button--grey"
                     >GitHub</a>
@@ -66,11 +62,11 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
+import Logo2BookLunch from "~/components/logo-2book-lunch.vue";
 
 export default {
     components: {
-        Logo
+        Logo2BookLunch
     }
 };
 </script>

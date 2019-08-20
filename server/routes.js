@@ -15,7 +15,8 @@ function Routes(app) {
 
     app.get('/api/restaurants/:id', (req, res) => {
         const id = req.params.id
-        return res.json({ id })
+        let restaurant = factory.make('Restaurant', { id: id });
+        return res.json(restaurant);
     })
 }
 

@@ -2,7 +2,7 @@
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <Logo2BookLunch />2Book Lunch
+                <Logo2BookLunch style="margin-right: 5px;" />2Book Lunch
             </a>
             <button
                 class="navbar-toggler"
@@ -44,7 +44,7 @@
         </nav>
         <div class="container">
             <div>
-                <Logo2BookLunch />
+                <Logo2BookLunch width="150" />
                 <h1 class="title">2book-lunch</h1>
                 <h2 class="subtitle">My good Nuxt.js project</h2>
                 <div class="links">

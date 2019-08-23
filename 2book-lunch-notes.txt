@@ -183,3 +183,15 @@ BUILD an endpoint
 
 
 
+
+
+
+
+
+//******************* 201909
+Swagger docs
+Example: Petstore
+https://petstore.swagger.io/
+
+HOMEWORK: learn json schema
+	- Create schemas for DB Objects: events, orders, users, etc...

@@ -3,7 +3,7 @@
   "info" : {
     "description" : "This is a sample Petstore server.  You can find \nout more about Swagger at \n[http://swagger.io](http://swagger.io) or on \n[irc.freenode.net, #swagger](http://swagger.io/irc/).\n",
     "version" : "1.0.0",
-    "title" : "Swagger Petstore",
+    "title" : "2Book Lunch",
     "termsOfService" : "http://swagger.io/terms/",
     "contact" : {
       "email" : "apiteam@swagger.io"
@@ -35,6 +35,41 @@
   } ],
   "schemes" : [ "https", "http" ],
   "paths" : {
+    "/restaurants": {
+      "get": {
+        "tags" : [ "restaurant" ],
+        "summary" : "List Restaurants",
+        "description" : "List all restaurants for 2book lunch",
+        "operationId" : "listRestaurants",
+        "produces" : [ "application/json" ],
+        "parameters" : [],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Restaurant"
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid status value"
+          }
+        },
+        "security" : [ {
+          "petstore_auth" : [ "write:pets", "read:pets" ]
+        } ]
+      },
+      "post": {}
+    },
+
+    "/restaurants/{restaurantId}": {
+      "get": {},
+      "put": {},
+      "delete": {}
+    },
+
     "/pet" : {
       "post" : {
         "tags" : [ "pet" ],

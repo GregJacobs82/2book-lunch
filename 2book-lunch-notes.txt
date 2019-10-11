@@ -150,12 +150,12 @@ ORDERS {
 	- description
 	- user.id
 	- event.id
+	- restaurant.id
 }
 
 EVENTS {
 	- budget
 	- date
-	- restaurant
 }
 
 
@@ -195,3 +195,19 @@ https://petstore.swagger.io/
 
 HOMEWORK: learn json schema
 	- Create schemas for DB Objects: events, orders, users, etc...
+
+
+
+
+
+//******************* 20191011
+Discussed more about JSon Swagger
+Installed extension to preview swagger json files
+Created 2book-lunch.json (based of example petstore.json)
+	- Added "restaurants"
+		- GET: Aaron walked through adding this
+		- POST: (yet to do)
+	- Added "restaurants/{restaurant_id}"
+		- GET:
+		- PUT:
+		- DELETE: 

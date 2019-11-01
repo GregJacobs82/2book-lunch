@@ -218,3 +218,13 @@ swaggerhub json file, and pushed to github... i dont think it updated on swagger
 i think you need to "Edit Github Push" api options on Swaggerhub to sync with the github repo?
 But that requires access token, etc... need to research this more.
 https://app.swaggerhub.com/apis/GregJacobs82/2BookLunch/1.0.0
+
+
+
+
+
+
+//******************* 20191101
+Chatted via Google Meetup w/ Aaron
+Discussed Swagger docs and that from this point to come up with Sketch file of wireframes for UI and user flows
+Once we determine some UI and expected user flows, we can determine what data is needed and finalize jSon API database structre
